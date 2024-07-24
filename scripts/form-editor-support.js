@@ -249,7 +249,7 @@ async function applyChanges(event) {
             parent.replaceChildren();
           }
           if (parent.hasAttribute('data-component-status')) {
-            parent.removeAttribute('data-component-status');
+            //parent.removeAttribute('data-component-status');
           }
           await generateFormRendition(parentDef, parent, getItems);
           annotateItems(parent.childNodes, formDef, {});
