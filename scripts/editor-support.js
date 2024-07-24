@@ -105,5 +105,3 @@ function attachEventListners(main) {
 }
 
 attachEventListners(document.querySelector('main'));
-import { } from './form-editor-support.js';
-
