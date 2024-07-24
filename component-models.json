@@ -294,6 +294,12 @@
                 "collapsible": false,
                 "fields": [
                     {
+                        "component": "cloud-config-select",
+                        "name": "Cloud Config Path",
+                        "label": "cloudConfigPath",
+                        "valueType": "string"
+                    },
+                    {
                         "component": "text",
                         "name": "name",
                         "label": "Name",
