@@ -207,6 +207,13 @@
                 "value" : ""
             },
             {
+                "component": "boolean",
+                "name": "enableRestEndpointPost",
+                "label": "Enable POST request",
+                "valueType": "string",
+                "condition": { "==": [{ "var": "actionType" }, "fd/af/components/guidesubmittype/restendpoint"] }
+            },
+            {
                 "component": "text",
                 "name": "restEndpointPostUrl",
                 "label": "URL For POST request",
