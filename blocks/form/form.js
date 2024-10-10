@@ -530,6 +530,7 @@ export default async function decorate(block) {
     }
     form.addEventListener('submit', (event) => {
        event.preventDefault();
+       console.log('prevent default');
     });
     container.replaceWith(form);
   }
