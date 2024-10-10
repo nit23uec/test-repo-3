@@ -530,6 +530,7 @@ export default async function decorate(block) {
     }
     form.addEventListener('submit', (event) => {
        event.preventDefault();
+       event.stopPropagation();
        console.log('prevent default');
     });
     form.querySelector('button[type="submit"]').addEventListener('click', (event) => {
