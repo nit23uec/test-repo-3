@@ -528,13 +528,8 @@ export default async function decorate(block) {
     if (source === 'aem' && formDef.properties) {
       form.dataset.formpath = formDef.properties['fd:path'];
     }
-    form.addEventListener('submit', (event) => {
-       event.preventDefault();
-       event.stopPropagation();
-       console.log('prevent default');
-    });
     form.querySelector('button[type="submit"]').addEventListener('click', (event) => {
-       event.stopPropagation();
+       event.preventDefault();
        console.log('stop propagation ');
     });
     container.replaceWith(form);
